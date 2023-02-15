@@ -442,3 +442,138 @@ button:hover {
   color: var(--color-error);
   visibility: initial;
 }
+
+/* QUERIES */
+
+@media (max-width: calc(800em / 16)) {
+  .container {
+    padding: var(--16wpx);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--12wpx);
+  }
+
+  .nav-list {
+    gap: var(--12wpx) var(--24wpx);
+  }
+
+  .nav-item {
+    font-size: var(--14tpx);
+  }
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: var(--64wpx) var(--16wpx);
+  }
+
+  .heading {
+    font-size: var(--24tpx);
+    text-align: center;
+  }
+  .hero-description {
+    font-size: var(--14tpx);
+    text-align: center;
+  }
+
+  .hero-img {
+    grid-row: 1;
+    min-width: 100%;
+  }
+
+  .hero-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    padding: var(--12wpx);
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: var(--64wpx) var(--16wpx);
+  }
+
+  .features-img {
+    grid-row: 1;
+    min-width: 100%;
+  }
+
+  .features-link-wrapper {
+    margin: 0 auto;
+    margin-top: var(--64wpx);
+  }
+
+  .features-text:first-child {
+    padding: var(--64wpx) var(--16wpx);
+  }
+
+  .testimonial {
+    min-width: 100%;
+    padding: var(--16wpx) var(--16wpx);
+    margin-top: var(--64wpx);
+  }
+
+  .cta-section {
+    padding: var(--64wpx) var(--16wpx);
+    flex-direction: column;
+    gap: var(--16wpx);
+  }
+
+  .cta-content {
+    text-align: center;
+  }
+
+  .cta-content-text {
+    margin: 0;
+  }
+
+  .cta-form {
+    width: 100%;
+    padding: var(--16wpx);
+    gap: var(--2wpx);
+    /* flex-direction: column; */
+  }
+
+  .cta-form-input {
+    width: 100%;
+  }
+
+  .cta-btn {
+    width: 100%;
+    padding: var(--16wpx);
+  }
+
+  .footer {
+    padding: var(--16wpx);
+  }
+
+  .footer-logo {
+    width: calc(180rem / 16);
+    margin-top: var(--64wpx);
+  }
+
+  .links-item {
+    grid-area: unset !important;
+  }
+
+  .links-item a:link {
+    font-size: var(--18tpx);
+  }
+
+  .links-item:nth-child(2) {
+    margin-bottom: var(--64wpx);
+  }
+  .links-item:nth-child(6) {
+    margin-bottom: var(--64wpx);
+  }
+
+  .links-item:last-child {
+    margin: var(--64wpx);
+    justify-content: center;
+  }
+}
